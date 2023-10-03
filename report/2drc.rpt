@@ -1,0 +1,30 @@
+#-check_same_via_cell true               # bool, default=false, user setting
+ *** Starting Verify DRC (MEM: 2905.4) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+**WARN: (IMPVFG-1198):	The number of CPUs requested 8 is larger than that verify_drc used 4. In Multithreading mode, the number of CPUs verify_drc used is not larger than the number of subareas.
+ Use 'setMultiCpuUsage -localCpu' to specify the less cup number if the verify area is not large.
+  VERIFY DRC ...... Using new threading
+ VERIFY DRC ...... Sub-Area: {0.000 0.000 58.320 57.240} 1 of 4  Thread : 0
+ VERIFY DRC ...... Sub-Area: {58.320 0.000 114.760 57.240} 2 of 4  Thread : 0
+ VERIFY DRC ...... Sub-Area: {0.000 57.240 58.320 113.120} 3 of 4  Thread : 0
+ VERIFY DRC ...... Thread : 3 finished.
+ VERIFY DRC ...... Sub-Area: {58.320 57.240 114.760 113.120} 4 of 4  Thread : 0
+ VERIFY DRC ...... Thread : 0 finished.
+
+  Verification Complete : 20 Viols.
+
+ Violation Summary By Layer and Type:
+
+	          Short   MetSpc   CutSpc   Totals
+	metal2        7        0        0        7
+	metal3        8        1        0        9
+	via4          0        0        1        1
+	metal5        3        0        0        3
+	Totals       18        1        1       20
+
+ *** End Verify DRC (CPU: 0:00:01.1  ELAPSED TIME: 1.00  MEM: 256.1M) ***
+
